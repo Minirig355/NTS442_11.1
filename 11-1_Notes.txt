@@ -1,0 +1,236 @@
+Intro to CyberSec
+====================================================================================================================================
+
+//////////////////////////////////////////////// INTRO TO CYBER SECURITY FINISHED \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+====================================================================================================================================
+
+Introduction to Pentesting
+	Pentesting Fundamentals
+		Task 1 - What is Pentesting?
+			• Ethically and consensually hacking systems in order to find vulns and secure the systems more
+		Task 2 - Pentesting Ethics
+			• Consent matters!
+			• Different types
+				○ White Hat	|	The good guy, helps others and uses their skills to benefit others (pentester)
+				○ Grey Hat	|	Usually benefit people, but don't operate with strict laws/standards (taking down a scam site)
+				○ Black Hat	|	Criminals. They seek to damage systems/orgs and usually seek financial gain (ransomware authors)
+			• RoE's
+				○ Permission - A document granting permission for you to hack someone/something, only step between legal and illegal!
+				○ Test Scope - Will denote targets (i.e., pentest THIS server, NOT the CEOs phone)
+				○ Rules - Will outline what techniques are allowed (i.e., Can phish, can mitm, but please don't lockpick our doors)
+		Task 3 - Pentesting Methodologies
+			• General stages of pentesting:
+				1. Information Gathering
+				2. Enumeration/Scanning
+				3. Exploitation
+				4. Privilege Escalation
+				5. Post-Exploitation
+			• OSSTMM - Open Source Security Testing Methodology Manual
+				○ Has methologies for Telecom (VoIP, etc), Wired Network, Wireless Comms
+				 ____________________________________________________________________________
+				|_____________Advantages_____________|_____________Disadvantages_____________|
+				• Covers various testing strategies  | • Framework is difficult to understand,
+				   in depth							 |	 very detailed and tends to use
+				• Includes testing strategies for	 |	 unique definitions
+				   specific targets					 |
+				• The framework is flexible to an	 |
+				   organization's needs				 |
+				   
+			• OWASP - Open Web Application Security Project
+				○ Community driven and up-to-date framework for webapp and services
+				 ____________________________________________________________________________
+				|_____________Advantages_____________|_____________Disadvantages_____________|
+				• Easy to pick up and understand	 | • Unclear what vulns webapps have at
+				• Actively maintained, freq updates	 |	  times (lots of overlap)
+				• It covers all stages of engagement | • OWASP does not make suggestions to
+				• Specializes in webapps and services| 	  specific software dev lifecycles
+													 | • Doesn't hold any accreditation
+													 
+			• NIST - National Institute of Standards and Technology
+				○ Sets standards and guidelines for many orgs
+				 ____________________________________________________________________________
+				|_____________Advantages_____________|_____________Disadvantages_____________|
+				• Used by 50% of orgs by 2020		 | • Has many iterations, confusing which applies
+				• Extremely detailed in standards	 | • Weak auditing policies
+				   to help mitigate threats			 | • Doesn't consider cloud computing
+				• Frequently updated				 |
+				• Provides accreditation			 |
+				• Can be implemented in tandem w/	 |
+				   other frameworks					 |
+				   
+			• NCSC CAF - Cyber Assessment Framework
+				○ Meant for "vitally important services and activities"
+				 ____________________________________________________________________________
+				|_____________Advantages_____________|_____________Disadvantages_____________|
+				• Backed by a gov cybersec agency	 | • Still new, not many adopters *yet*
+				• Provides accreditation			 | • Based on principles and ideas, not
+				• Covers 14 principles from security |    rules like other frameworks
+				   to response						 |
+				
+		Task 4 - Black box, White box, Grey box Pentesting
+			• Three scopes of testing that will depend on how knowledgeable I am on an application/service
+				1. Black Box - Means I have zero information on the app/service. Usually takes longer for obvious reasons
+				2. Grey Box - Means I have limited information, most common type of pentest, helps with starting points
+				3. White Box - Full knowledge. Helps make sure that all angles are covered and validated
+		Task 5 - ACME Pentest
+			• This pentest is a very hand-holdey pentest, it's great for beginners but probably not worth denoting here if you've done other ctf labs
+
+	--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--
+
+	Principles of Security
+		Task 1 - Intro 
+		Task 2 - CIA Triad
+			• Confidentiality
+				○ Protection of sensitive data and pii
+			• Integrity
+				○ Ensuring the information is accurate and consistent
+			• Availability
+				○ Making sure the data is available
+		Task 3 - Principles of Privileges
+			• PIM - Privileged Identity Management
+			• PAM - Privileged Access Management
+			• Principle of least privilege!!! Make sure user's don't have accesses they shouldn't
+		Task 4 - Security Models Continued
+			• Bell-La Padula Model
+				○ Assumes everyone's responsibilites/roles are well-defined (popular in gov/military)
+				○ Access is granted to data on a strict need to know basis. Operates on a 'No write down, no read up' rule.
+				 ____________________________________________________________________________
+				|_____________Advantages_____________|_____________Disadvantages_____________|
+				• Policies can be replicated to real | • Access != knowledge
+				• Simple to implement and understand | • Model relies on a lot of trust
+				
+			• Biba Model
+				○ Similar to prev model but focus on integrity
+				○ This time it's 'no write up, no read down', meaning subjects can write content to data at or below them
+				   but can only read the contents of data above the subject's level
+				 ____________________________________________________________________________
+				|_____________Advantages_____________|_____________Disadvantages_____________|
+				• Simple to implement				 | • There are many layers, easier to overlook
+				• Addresses both confidentiality and | • Can cause delays (i.e., Doctor can't read
+				   integrity						 |    notes made by a nurse)
+				
+		Task 5 - Threat Modeling and Incident Response
+			• Principles:
+				○ Prep
+				○ Ident
+				○ Mitigations
+				○ Review
+			• An effective threat model:
+				○ Threat intel
+				○ Asset ident
+				○ Mitigation capabilities
+				○ Risk Assessment
+			• STRIDE Framework
+				○ Spoofing
+				○ Tampering
+				○ Repudiation
+				○ Information Disclosure
+				○ Denial of Service
+				○ Elevation of Privilege
+			• Incident Response phases:
+				○ Prep
+				○ Ident
+				○ Containment
+				○ Eradication
+				○ Recovery
+				○ Lessons Learned
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--
+
+
+====================================================================================================================================
+
+//////////////////////////////////////////// PLACEHOLDERRRRRRRRRRRRRRRRRRRRRRRRRRRRRR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+====================================================================================================================================
+	
+
+		Task 1 - 
+			• 
+		Task 2 - 
+			• 
+		Task 3 - 
+			• 
+		Task 4 - 
+			• 
+		Task 5 - 
+			• 
+		Task 6 - 
+			• 
+		Task 7 - 
+			• 
+		Task 8 - 
+			• 
+		Task 9 - 
+			• 
+		Task 10 - 
+			• 
+		Task 11 - 
+			• 
+		Task 12 - 
+			• 
+		Task 13 - 
+			• 
+		Task 14 - 
+			• 
+		Task 15 - 
+			• 
+		Task 16 - 
+			• 
+		Task 17 - 
+			• 
+		Task 18 - 
+			• 
+		Task 19 - 
+			• 
+		Task 20 - 
+			• 
+		Task 21 - 
+			• 
+		Task 22 - 
+			• 
+		Task 23 - 
+			• 
